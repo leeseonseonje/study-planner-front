@@ -5,11 +5,14 @@
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import HelloWorld from './components/HelloWorld.vue';
+// import HelloWorld from './components/HelloWorld.vue';
+import BodyHeader from './components/BodyHeader.vue'
+
 
 @Options({
   components: {
-    HelloWorld,
+    // HelloWorld,
+    BodyHeader
   },
 })
 export default class App extends Vue {}
