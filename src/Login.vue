@@ -1,23 +1,22 @@
 <template>
   <div>
-    <Header/>
     <LoginHome/>
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import Header from './components/Header.vue';
+// import Header from './components/Header.vue';
 import LoginHome from './components/LoginHome.vue'
 
 
 @Options({
   components: {
-    Header,
+    // Header,
     LoginHome
   },
 })
-export default class App extends Vue {}
+export default class Login extends Vue {}
 </script>
 
 <style>
