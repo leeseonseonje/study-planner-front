@@ -6,13 +6,11 @@
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-// import Header from './components/Header.vue';
 import LoginHome from './components/LoginHome.vue'
 
 
 @Options({
   components: {
-    // Header,
     LoginHome
   },
 })
