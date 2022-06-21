@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header :name="username"></Header>
-    <LoginHome/>
+    <LoginHome v-on:showName="deliverName"></LoginHome>
   </div>
 </template>
 
@@ -14,11 +14,25 @@ import LoginHome from './components/LoginHome.vue'
 @Options({
   components: {
     Header,
-    LoginHome
+    LoginHome 
+  },
+  data() {
+    return {
+      username: ''
+    }
+  },
+  methods: {
+      deliverName(value: string) {
+        console.log("deliverName");
+        console.log('dasda' + this.username);
+
+        this.username = value;
+        
+      }
   }
 })
 export default class App extends Vue {
-  username: string = '선제';
+  username!: string;
 }
 </script>
 

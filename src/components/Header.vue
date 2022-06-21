@@ -34,7 +34,7 @@ import { Options, Vue } from 'vue-class-component';
     name: String
   }
 })
-export default class WhatVue extends Vue {
+export default class Header extends Vue {
   name!: string 
 }
 </script>

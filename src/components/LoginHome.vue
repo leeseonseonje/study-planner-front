@@ -15,7 +15,7 @@
         </div>
 
         <div style="line-height: 10vh">
-            <button type="submit" class="btn btn-lg btn-success" style="width: 500px" href="/"> 로 그 인 </button>
+            <button @click="$emit('showName', '선제')" class="btn btn-lg btn-success" style="width: 500px" href="/"> 로 그 인 </button>
         </div>
 
             <div style="line-height: 1vh;">
@@ -25,6 +25,20 @@
 </div>
 </template>
 
+<script lang="ts">
+import { Options, Vue } from 'vue-class-component';
+
+@Options({
+    props: {
+        name: String
+    }
+})
+
+
+export default class LoginHome extends Vue {  
+    name!: string
+}
+</script>
 <style scoped>
  .full-container{
             height: 75vh;
