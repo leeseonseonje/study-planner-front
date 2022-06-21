@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header :name="선제"></Header>
     <LoginHome/>
   </div>
 </template>
@@ -15,9 +15,11 @@ import LoginHome from './components/LoginHome.vue'
   components: {
     Header,
     LoginHome
-  },
+  }
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  name: string = '안녕하세요.';
+}
 </script>
 
 <style>

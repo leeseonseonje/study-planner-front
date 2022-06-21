@@ -2,7 +2,7 @@
 <div  style=" margin-left: 10px">
         <div class="dropdown" style="float: right; margin-right: 10px">
             <button class="btn btn-success dropdown-toggle" type="button"
-                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100px"></button>
+                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100px">{{ name }}</button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li><a class="dropdown-item text-success" href="#">마이페이지</a></li>
                 <li><a class="dropdown-item text-success" href="/logout">로그아웃</a></li>
@@ -31,10 +31,10 @@ import { Options, Vue } from 'vue-class-component';
 
 @Options({
   props: {
-    msg: String
+    name: String
   }
 })
 export default class WhatVue extends Vue {
-  msg!: string
+  name!: string 
 }
 </script>
