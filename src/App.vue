@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header :name="username"></Header>
+    <span v-bind:style="style">안녕</span>
     <LoginHome v-on:showName="deliverName"></LoginHome>
   </div>
 </template>
@@ -18,21 +19,23 @@ import LoginHome from './components/LoginHome.vue'
   },
   data() {
     return {
-      username: ''
+      username: '',
+      text: '',
+      style: 'color: white'
     }
   },
   methods: {
       deliverName(value: string) {
-        console.log("deliverName");
-        console.log('dasda' + this.username);
-
         this.username = value;
-        
+        this.text = '안녕'
+        this.style = 'color: green; font-size: 72px'
       }
   }
 })
 export default class App extends Vue {
   username!: string;
+  text!: string;
+  style!: string;
 }
 </script>
 
