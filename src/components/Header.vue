@@ -1,6 +1,6 @@
 <template>
 <div  style=" margin-left: 10px">
-        <div class="dropdown" style="float: right; margin-right: 10px">
+        <div class="dropdown myButton">
             <button class="btn btn-success dropdown-toggle" type="button"
                     id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100px">{{ name }}</button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -38,3 +38,10 @@ export default class Header extends Vue {
   name!: string 
 }
 </script>
+
+<style scoped>
+    .myButton {
+        float: right;
+        margin-right: 10px
+    }
+</style>
