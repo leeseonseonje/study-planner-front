@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header :name="username"></Header>
-    <span v-bind:style="style">안녕</span>
+    <p v-bind:style="style">안녕</p>
     <LoginHome v-on:showName="deliverName"></LoginHome>
   </div>
 </template>
@@ -33,9 +33,6 @@ import LoginHome from './components/LoginHome.vue'
   }
 })
 export default class App extends Vue {
-  username!: string;
-  text!: string;
-  style!: string;
 }
 </script>
 

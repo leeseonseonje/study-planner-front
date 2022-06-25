@@ -8,7 +8,7 @@
                 <li><a class="dropdown-item text-success" href="/logout">로그아웃</a></li>
             </ul>
     </div>
-
+ 
     <ul class="nav nav-tabs">
         <li class="nav-item">
             <a class="nav-link active text-success" href="/">StudyPlanner</a>
@@ -35,7 +35,6 @@ import { Options, Vue } from 'vue-class-component';
   }
 })
 export default class Header extends Vue {
-  name!: string 
 }
 </script>
 

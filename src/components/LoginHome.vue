@@ -30,13 +30,11 @@ import { Options, Vue } from 'vue-class-component';
 
 @Options({
     props: {
-        name: String
     }
 })
 
 
 export default class LoginHome extends Vue {  
-    name!: string
 }
 </script>
 <style scoped>
